@@ -1,0 +1,58 @@
+import type { Config } from "tailwindcss";
+
+export default {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./snobby-web2-src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        wii: ["'M PLUS Rounded 1c'", "'Rounded Mplus 1c'", "system-ui", "sans-serif"],
+      },
+      animation: {
+        "float": "float 3s ease-in-out infinite",
+        "pulse-ring": "pulseRing 2s ease-in-out infinite",
+        "spin-slow": "spin 20s linear infinite",
+        "spin-slow-reverse": "spinReverse 15s linear infinite",
+        "scroll-left": "snobby-scroll-left 30s linear infinite",
+        "scroll-right": "snobby-scroll-right 30s linear infinite",
+        "scroll-left-mobile": "snobby-scroll-left-mobile 30s linear infinite",
+        "scroll-right-mobile": "snobby-scroll-right-mobile 30s linear infinite",
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+        pulseRing: {
+          "0%, 100%": { boxShadow: "0 0 0 0 rgba(100,200,255,0.4)" },
+          "50%": { boxShadow: "0 0 0 12px rgba(100,200,255,0)" },
+        },
+        spinReverse: {
+          from: { transform: "rotate(360deg)" },
+          to: { transform: "rotate(0deg)" },
+        },
+        "snobby-scroll-left": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-2530px)" },
+        },
+        "snobby-scroll-right": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(2530px)" },
+        },
+        "snobby-scroll-left-mobile": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-1272px)" },
+        },
+        "snobby-scroll-right-mobile": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(1272px)" },
+        },
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
