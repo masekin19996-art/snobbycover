@@ -215,7 +215,7 @@ export default function PhoneTypeD() {
   return (
     <div className="bg-black content-stretch flex flex-col items-center overflow-x-hidden pt-[54px] relative size-full min-w-0 max-w-full" data-name="Phone_TypeD">
       <Container />
-      <div className="bg-black content-stretch flex flex-col gap-[15px] items-start px-[20px] py-[30px] relative shrink-0 w-[402px]" data-name="Phone_Footer">
+      <div className="bg-black content-stretch flex flex-col gap-[15px] items-start px-[20px] py-[30px] relative shrink-0 w-full" data-name="Phone_Footer">
         <Frame2 />
         <Frame3 />
       </div>

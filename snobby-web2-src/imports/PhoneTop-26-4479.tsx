@@ -126,7 +126,7 @@ function Component() {
 
 function Navbar() {
   return (
-    <div className="content-stretch flex flex-col items-center overflow-clip pb-[10.156px] pt-[11.849px] relative shrink-0 w-[650px]" data-name="Navbar">
+    <div className="content-stretch flex flex-col items-center overflow-clip pb-[10.156px] pt-[11.849px] relative shrink-0 w-full" data-name="Navbar">
       <a
         href="https://home.whenpigsfly.jp/"
         rel="noopener noreferrer"
@@ -488,7 +488,7 @@ export default function PhoneTop() {
   const [readerOpen, setReaderOpen] = useState(false);
 
   return (
-    <div className="content-stretch flex flex-col items-center pt-[45px] relative size-full" data-name="Phone_TOP">
+    <div className="content-stretch flex flex-col items-center overflow-x-hidden pt-[45px] relative size-full" data-name="Phone_TOP">
       <video
         autoPlay
         className="pointer-events-none fixed inset-0 z-0 h-full w-full object-cover bg-black"
