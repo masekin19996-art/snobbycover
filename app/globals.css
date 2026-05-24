@@ -400,7 +400,8 @@ html, body {
 /* Snobby Cover PC（Snobby_cover_test）: ページ全体を縦スクロール可能に */
 html.snobbycover-scrollable,
 html.snobbycover-scrollable body {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: auto;
   min-height: 100%;
   user-select: text;
