@@ -45,11 +45,11 @@ export default {
         },
         "snobby-scroll-left-mobile": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-1272px)" },
+          to: { transform: "translateX(-680px)" },
         },
         "snobby-scroll-right-mobile": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(1272px)" },
+          to: { transform: "translateX(680px)" },
         },
       },
     },

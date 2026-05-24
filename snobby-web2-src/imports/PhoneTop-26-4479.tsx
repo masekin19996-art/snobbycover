@@ -77,9 +77,9 @@ function MarqueeBookPhone({
 
 function Frame2({ onMangaClick }: { onMangaClick: () => void }) {
   const wrap =
-    "h-[80px] relative shadow-[0px_2px_2px_0px_rgba(0,0,0,0.25)] shrink-0 w-[52px]";
+    "h-[100px] relative shadow-[0px_2px_2px_0px_rgba(0,0,0,0.25)] shrink-0 w-[65px]";
   return (
-    <div className="absolute content-stretch flex gap-[65px] items-center left-0 top-0 animate-scroll-left-mobile">
+    <div className="absolute content-stretch flex gap-[20px] items-center left-0 top-0 animate-scroll-left-mobile">
       {Array.from({ length: 16 }, (_, i) => (
         <MarqueeBookPhone
           key={`m-left-${i}`}
@@ -140,9 +140,9 @@ function Navbar() {
 
 function Frame3({ onMangaClick }: { onMangaClick: () => void }) {
   const wrap =
-    "h-[80px] relative shadow-[0px_2px_2px_0px_rgba(0,0,0,0.25)] shrink-0 w-[52px]";
+    "h-[100px] relative shadow-[0px_2px_2px_0px_rgba(0,0,0,0.25)] shrink-0 w-[65px]";
   return (
-    <div className="absolute content-stretch flex gap-[65px] items-center left-[-936px] top-0 animate-scroll-right-mobile">
+    <div className="absolute content-stretch flex gap-[20px] items-center left-[-680px] top-0 animate-scroll-right-mobile">
       {Array.from({ length: 16 }, (_, i) => (
         <MarqueeBookPhone
           key={`m-right-${i}`}
@@ -158,12 +158,12 @@ function Frame3({ onMangaClick }: { onMangaClick: () => void }) {
 
 function Container({ onMangaClick }: { onMangaClick: () => void }) {
   return (
-    <div className="content-stretch flex flex-col h-[649px] items-center justify-between py-[30px] relative w-full overflow-hidden" data-name="Container">
-      <div className="h-[80px] overflow-clip relative shrink-0 w-[970.149px]" data-name="frame36">
+    <div className="content-stretch flex flex-col h-auto items-center gap-[40px] py-[40px] relative w-full overflow-hidden" data-name="Container">
+      <div className="h-[100px] overflow-clip relative shrink-0 w-full" data-name="frame36">
         <Frame2 onMangaClick={onMangaClick} />
       </div>
       <Navbar />
-      <div className="h-[80px] overflow-clip relative shrink-0 w-[970.149px]" data-name="frame36">
+      <div className="h-[100px] overflow-clip relative shrink-0 w-full" data-name="frame36">
         <Frame3 onMangaClick={onMangaClick} />
       </div>
     </div>
@@ -491,7 +491,7 @@ export default function PhoneTop() {
     <div className="content-stretch flex flex-col items-center pt-[45px] relative size-full" data-name="Phone_TOP">
       <video
         autoPlay
-        className="pointer-events-none fixed inset-0 z-0 h-full w-full object-cover bg-black"
+        className="pointer-events-none fixed top-0 left-0 z-0 h-screen w-screen object-cover bg-black"
         controlsList="nodownload"
         loop
         muted
