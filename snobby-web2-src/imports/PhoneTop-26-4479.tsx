@@ -79,7 +79,7 @@ function Frame2({ onMangaClick }: { onMangaClick: () => void }) {
   const wrap =
     "h-[100px] relative shadow-[0px_2px_2px_0px_rgba(0,0,0,0.25)] shrink-0 w-[65px]";
   return (
-    <div className="absolute content-stretch flex gap-[20px] items-center left-0 top-0 animate-scroll-left-mobile">
+    <div className="absolute content-stretch flex gap-[35px] items-center left-0 top-0 animate-scroll-left-mobile">
       {Array.from({ length: 16 }, (_, i) => (
         <MarqueeBookPhone
           key={`m-left-${i}`}
@@ -142,7 +142,7 @@ function Frame3({ onMangaClick }: { onMangaClick: () => void }) {
   const wrap =
     "h-[100px] relative shadow-[0px_2px_2px_0px_rgba(0,0,0,0.25)] shrink-0 w-[65px]";
   return (
-    <div className="absolute content-stretch flex gap-[20px] items-center left-[-680px] top-0 animate-scroll-right-mobile">
+    <div className="absolute content-stretch flex gap-[35px] items-center left-[-800px] top-0 animate-scroll-right-mobile">
       {Array.from({ length: 16 }, (_, i) => (
         <MarqueeBookPhone
           key={`m-right-${i}`}
@@ -158,7 +158,7 @@ function Frame3({ onMangaClick }: { onMangaClick: () => void }) {
 
 function Container({ onMangaClick }: { onMangaClick: () => void }) {
   return (
-    <div className="content-stretch flex flex-col h-auto items-center gap-[40px] py-[40px] relative w-full overflow-hidden" data-name="Container">
+    <div className="content-stretch flex flex-col min-h-[calc(100svh-45px)] items-center justify-between py-[40px] relative w-full overflow-hidden" data-name="Container">
       <div className="h-[100px] overflow-clip relative shrink-0 w-full" data-name="frame36">
         <Frame2 onMangaClick={onMangaClick} />
       </div>
