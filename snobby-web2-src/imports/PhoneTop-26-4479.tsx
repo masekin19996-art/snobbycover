@@ -158,7 +158,7 @@ function Frame3({ onMangaClick }: { onMangaClick: () => void }) {
 
 function Container({ onMangaClick }: { onMangaClick: () => void }) {
   return (
-    <div className="content-stretch flex flex-col h-[649px] items-center justify-between py-[30px] relative shrink-0 w-[1300px]" data-name="Container">
+    <div className="content-stretch flex flex-col h-[649px] items-center justify-between py-[30px] relative w-full overflow-hidden" data-name="Container">
       <div className="h-[80px] overflow-clip relative shrink-0 w-[970.149px]" data-name="frame36">
         <Frame2 onMangaClick={onMangaClick} />
       </div>
