@@ -488,7 +488,7 @@ export default function PhoneTop() {
   const [readerOpen, setReaderOpen] = useState(false);
 
   return (
-    <div className="content-stretch flex flex-col items-center overflow-x-hidden pt-[45px] relative size-full" data-name="Phone_TOP">
+    <div className="content-stretch flex flex-col items-center pt-[45px] relative size-full" data-name="Phone_TOP">
       <video
         autoPlay
         className="pointer-events-none fixed inset-0 z-0 h-full w-full object-cover bg-black"
@@ -500,7 +500,7 @@ export default function PhoneTop() {
         <source src="/videos/snobbycover-bg.mp4" type="video/mp4" />
       </video>
       <ReaderPdfOverlay open={readerOpen} onClose={() => setReaderOpen(false)} />
-      <div className="relative z-10 w-full flex flex-col items-center">
+      <div className="relative z-10 w-full max-w-full overflow-hidden flex flex-col items-center">
         <Container onMangaClick={() => setReaderOpen(true)} />
         <StoryContainer />
         <Container3 />
