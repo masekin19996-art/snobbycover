@@ -198,7 +198,7 @@ function PhoneLogoComponent() {
 function Container2() {
   return (
     <div className="relative shrink-0 w-full" data-name="Container">
-      <div className="content-stretch flex flex-col gap-[40px] items-start leading-[0] pt-4 relative w-full px-0">
+      <div className="content-stretch flex flex-col gap-[40px] items-start leading-[0] pt-[40px] relative w-full px-0">
         <PhoneLogoComponent />
         <div className="font-['Shippori_Mincho',sans-serif] min-w-full not-italic relative shrink-0 text-[12px] text-white tracking-[0.24px] w-[min-content]">
           <p className="leading-[24px] mb-0">あなたは電車に乗っていて、向かいに座っている人が難しそうな本を読んでいる。</p>
@@ -235,7 +235,7 @@ function Frame5() {
 function StoryContainer() {
   return (
     <div className="bg-[#002daa] relative flex w-full shrink-0 flex-col items-center pb-0 sm:pb-1 px-5 sm:px-6" data-name="Story Container">
-      <div className="flex w-full max-w-[min(520px,100%)] flex-col items-center gap-1.5 sm:gap-2">
+      <div className="flex w-full max-w-[min(520px,100%)] flex-col items-center gap-[40px]">
         <Container2 />
         <Frame5 />
       </div>
