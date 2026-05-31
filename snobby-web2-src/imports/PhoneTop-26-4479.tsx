@@ -207,7 +207,7 @@ function Container2() {
           <p className="leading-[24px] mb-0">そのままでは電車で見かけたその人のように、知的な魅力を手にすることはできない。</p>
           <p className="leading-[24px] mb-0">でも大丈夫。ここで自分の読みたい漫画のサイズに合ったブックカバーを印刷して被せれば、あなたはいつでもどこでも「賢い人」になれる。</p>
           <p className="leading-[24px] mb-0">好きな漫画を読みながら、</p>
-          <p className="leading-[24px]">知的な魅力を演出しよう。</p>
+          <p className="leading-[24px] mb-0">知的な魅力を演出しよう。</p>
         </div>
       </div>
     </div>
@@ -235,7 +235,7 @@ function Frame5() {
 function StoryContainer() {
   return (
     <div className="bg-[#002daa] relative flex w-full shrink-0 flex-col items-center pb-0 sm:pb-1 px-5 sm:px-6" data-name="Story Container">
-      <div className="flex w-full max-w-[min(520px,100%)] flex-col items-center gap-[20px]">
+      <div className="flex w-full max-w-[min(520px,100%)] flex-col items-center gap-[10px]">
         <Container2 />
         <Frame5 />
       </div>
@@ -438,7 +438,7 @@ function Frame() {
         href="https://www.instagram.com/wpf.jp/"
         target="_blank"
         rel="noopener noreferrer"
-        className="overflow-clip relative shrink-0 size-[18px] cursor-pointer transition-opacity hover:opacity-80"
+        className="block cursor-pointer overflow-clip relative shrink-0 size-[18px] transition-opacity hover:opacity-80"
         data-name="Social Icons"
         aria-label="Instagram"
       >
