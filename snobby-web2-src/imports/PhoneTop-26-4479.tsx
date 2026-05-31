@@ -128,7 +128,7 @@ function Navbar() {
   return (
     <div className="content-stretch flex flex-col items-center overflow-clip pb-[10.156px] pt-[11.849px] relative shrink-0 w-full" data-name="Navbar">
       <a
-        href="https://home.whenpigsfly.jp/"
+        href="https://pigmentarchives.com/"
         rel="noopener noreferrer"
         className="cursor-pointer transition-opacity hover:opacity-80 z-10"
       >
@@ -235,7 +235,7 @@ function Frame5() {
 function StoryContainer() {
   return (
     <div className="bg-[#002daa] relative flex w-full shrink-0 flex-col items-center pb-0 sm:pb-1 px-5 sm:px-6" data-name="Story Container">
-      <div className="flex w-full max-w-[min(520px,100%)] flex-col items-center gap-[40px]">
+      <div className="flex w-full max-w-[min(520px,100%)] flex-col items-center gap-[20px]">
         <Container2 />
         <Frame5 />
       </div>
@@ -434,20 +434,6 @@ function Container3() {
 function Frame() {
   return (
     <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-full">
-      <a
-        href="https://x.com/a_pig_flying"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="overflow-clip relative shrink-0 size-[18px] cursor-pointer transition-opacity hover:opacity-80"
-        data-name="Social Icons"
-        aria-label="X (formerly Twitter)"
-      >
-        <div className="absolute inset-[7.93%_4.17%_9.21%_4.17%]" data-name="Vector">
-          <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.5 14.9145">
-            <path d={svgPaths.pd787000} fill="var(--fill-0, white)" id="Vector" />
-          </svg>
-        </div>
-      </a>
       <a
         href="https://www.instagram.com/wpf.jp/"
         target="_blank"
