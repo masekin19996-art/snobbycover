@@ -477,7 +477,7 @@ export default function PhoneTop() {
     <div className="content-stretch flex flex-col items-center pt-[45px] relative size-full" data-name="Phone_TOP">
       <video
         autoPlay
-        className="pointer-events-none fixed top-0 left-0 z-0 h-screen w-screen object-cover bg-black"
+        className="pointer-events-none fixed top-0 left-0 z-0 w-screen object-cover bg-black [height:100lvh] [transform:translateZ(0)] [backface-visibility:hidden]"
         controlsList="nodownload"
         loop
         muted
